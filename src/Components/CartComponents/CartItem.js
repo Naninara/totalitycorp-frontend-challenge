@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Box, Button, ButtonGroup, Typography } from "@mui/material";
-import NavBar from "../Navbar/NavBar";
+
 function CartItem({
   id,
   name,
@@ -15,7 +15,6 @@ function CartItem({
   decrement,
 }) {
   return (
-
     <Box sx={{ display: "flex" }}>
       <Box>
         <img src={image} height="100px" width="100px" alt="Not Found" />
@@ -66,13 +65,10 @@ function CartItem({
             onClick={() => {
               decrement(id);
             }}
-          >
-        
-          </Button>
+          ></Button>
         </ButtonGroup>
       </Box>
     </Box>
-
   );
 }
 
